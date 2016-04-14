@@ -19,6 +19,12 @@ on init
     chmod 0664 /sys/class/power_supply/bms/current_now
     chmod 0664 /sys/class/power_supply/bms/voltage_ocv
     start vm_bms
+    start restore
+
+service restore /sbin/sh /init.restore.sh
+    oneshot
+    disabled
+    seclabel u:r:su:s0
 
 service vm_bms /sbin/vm_bms
     disabled
