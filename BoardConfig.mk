@@ -53,9 +53,9 @@ TARGET_2ND_CPU_VARIANT := generic
 
 # Kernel Prebuilt
 TARGET_PREBUILT_KERNEL := device/asus/Z00E/kernel
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --base 0x80078000 --kernel_offset 0x00008000 --ramdisk_offset 0x01f88000 --tags_offset 0x01d88000 --second_offset 0x00e88000 --dt device/asus/Z00E/dt.img
+BOARD_MKBOOTIMG_ARGS := --dt device/asus/Z00E/dt.img
 
 # Recovery
 RECOVERY_VARIANT := twrp
