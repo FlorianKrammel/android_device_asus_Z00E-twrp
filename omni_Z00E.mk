@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 PRODUCT_NAME := omni_Z00E
+PRODUCT_BRAND := asus
 PRODUCT_DEVICE := Z00E
-PRODUCT_BRAND := Asus
 PRODUCT_MANUFACTURER := Asus
-PRODUCT_MODEL := Zenfone 2 Laser
+PRODUCT_MODEL := ASUS_Z00ED
