@@ -10,6 +10,8 @@ get() {
   t=$(dd if=$s skip=$1 bs=1 count=$2)
   if [ -z "$t" ]; then
     r=00
+  else
+    r=01
   fi
 }
 
