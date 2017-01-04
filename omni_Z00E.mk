@@ -21,8 +21,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
 PRODUCT_NAME := omni_Z00E
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := Z00E
-PRODUCT_MANUFACTURER := Asus
+PRODUCT_MANUFACTURER := asus
 PRODUCT_MODEL := ASUS_Z00ED
